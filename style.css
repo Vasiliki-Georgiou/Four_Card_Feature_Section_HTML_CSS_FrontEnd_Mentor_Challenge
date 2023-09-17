@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    background: linear-gradient(hsl(0, 0%, 98%), hsl(229, 6%, 66%, 0.2), hsl(0, 0%, 98%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px 50px;
+}
+
+header {
+   text-align: center;
+}
+
+header h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    font-size: 20px;
+}
+
+header strong {
+    font-weight: 600;
+}
+
+header p {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.left h3, .middle h3, .right h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+.left p, .middle p, .right p {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+.left div, .middle div, .right div {
+    width: 300px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 32px;
+    padding-left: 16px;
+    position: relative;
+    box-shadow: 10px 10px 5px hsl(229, 6%, 66%, 0.2);
+}
+
+.left div img, .middle div img, .right div img {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+.left div {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.middle > div {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.middle div:last-child {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.right div {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        margin: 0 130px;
+    }
+
+    .left div, .middle div, .right div {
+        width: 400px;
+        height: 240px;
+    }
+}
+
+@media(min-width: 1024px) {
+    header h1 {
+        font-size: 38px;
+    }
+
+    header p {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .left {
+        position: absolute;
+        transform: translate(-108%, 40%);
+    }
+
+    .right {
+        position: absolute;
+        transform: translate(108%, 40%);
+    }
+
+}
+
